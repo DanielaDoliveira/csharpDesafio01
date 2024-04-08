@@ -26,13 +26,13 @@ public class InputUser : Input
         if (string.IsNullOrEmpty(name))
         {
 
-            Console.WriteLine("Você precisa digitar um nome!");
+            throw new Exception("-----O USUARIO NAO DIGITOU O NOME-----");
 
         }
         else if (string.IsNullOrEmpty(lastName))
         {
 
-            Console.WriteLine("Você precisa digitar seu sobrenome!");
+            throw new Exception("-----O USUARIO NAO DIGITOU O SOBRENOME-----");
         }
         else
         {

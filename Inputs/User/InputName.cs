@@ -23,8 +23,8 @@ public class InputName : Input
         if (string.IsNullOrEmpty(name))
         {
 
-            Console.WriteLine("Você precisa digitar um nome!");
 
+            throw new Exception("-----O USUARIO NAO DIGITOU O NOME-----");
 
         }
 
