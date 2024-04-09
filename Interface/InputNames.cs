@@ -1,7 +1,7 @@
 
 namespace Desafio.Interface;
 
-public interface Input
+public interface InputNames
 {
     public void CallWelcomeMessage();
     public void Validation();

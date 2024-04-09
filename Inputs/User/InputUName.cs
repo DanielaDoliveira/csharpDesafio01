@@ -7,7 +7,7 @@ using Desafio.Interface;
 namespace Desafio.Inputs.User
 {
 
-    public class InputUName : Input
+    public class InputUName : InputNames
     {
         private string name;
         public InputUName(string _name = "")

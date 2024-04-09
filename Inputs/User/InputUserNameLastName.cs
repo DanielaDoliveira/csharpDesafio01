@@ -3,10 +3,11 @@
 
 using Desafio.Exceptions;
 using Desafio.Inputs.User;
+using Desafio.Interface;
 
 namespace Desafio.Inputs.User;
 
-public class InputUserNameLastName
+public class InputUserNameLastName : InputNames
 {
     private string name;
     private string lastName;
