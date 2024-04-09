@@ -1,5 +1,7 @@
 
 
+using System.ComponentModel.DataAnnotations;
+using Desafio.Exceptions;
 using Desafio.Inputs.User.Interface;
 
 namespace Desafio.Inputs.User;
@@ -22,15 +24,13 @@ public class InputName : Input
     {
         if (string.IsNullOrEmpty(name))
         {
-
-
-            throw new Exception("-----O USUARIO NAO DIGITOU O NOME-----");
-
+            throw new ValidationErrorException("-----O USUARIO NAO DIGITOU O NOME-----");
         }
 
         else
         {
             Console.WriteLine("Olá, {0}! Seja muito bem vindo(a)!", name);
+            Loading.LoadingFinishProgram();
         }
     }
     public void UserInputs()

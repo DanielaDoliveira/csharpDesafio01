@@ -1,4 +1,6 @@
 
+using Desafio.Exceptions;
+
 namespace Desafio.Inputs.Math;
 
 public class Calculator
@@ -28,12 +30,22 @@ public class Calculator
         MultiplyValidation(n2);
         return n1 / n2;
     }
+    public double Average(double n1, double n2)
+    {
+        MultiplyValidation(n2);
+        var sum = n1 + n2;
+        double average = sum / 2;
+        return average;
+
+
+    }
 
     public void MultiplyValidation(double number)
     {
         if (number == 0)
         {
-            throw new Exception("-----ERRO AO DIVIDIR! DENOMINADOR NAO PODE SER ZERO!-----");
+            throw new CalculatorException("-----ERRO AO DIVIDIR! DENOMINADOR NAO PODE SER ZERO!-----");
         }
     }
+
 }
