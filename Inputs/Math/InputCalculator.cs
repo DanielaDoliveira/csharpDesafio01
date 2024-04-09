@@ -1,9 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using Desafio.Exceptions;
-using Desafio.Inputs.User.Interface;
+
 
 namespace Desafio.Inputs.Math
 {

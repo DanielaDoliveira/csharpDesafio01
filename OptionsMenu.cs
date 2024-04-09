@@ -1,8 +1,9 @@
 
 using Desafio.Exceptions;
+using Desafio.Inputs.User;
 using Desafio.Inputs.CharCount;
 using Desafio.Inputs.Math;
-using Desafio.Inputs.User;
+using Desafio.Inputs.LicensePlate;
 
 
 namespace Desafio;
@@ -29,8 +30,8 @@ public class OptionsMenu
                 {
                     Loading.LoadBetweenActivities();
                     Console.WriteLine("\n ... Exercício 1 ... \n");
-                    InputName inputName = new InputName();
-                    inputName.UserInputs();
+                    InputUName inputUName = new InputUName();
+                    inputUName.UserInputs();
                 }
                 break;
             case "2":
@@ -59,13 +60,22 @@ public class OptionsMenu
 
                 }
                 break;
+            case "5":
+                {
+                    Loading.LoadBetweenActivities();
+                    Console.WriteLine("\n ... Exercicio 5 ... \n");
+                    InputLicensePlate inputLicensePlate = new InputLicensePlate();
+                    inputLicensePlate.Execute();
+
+                }
+                break;
             default:
                 {
 
                     throw new OptionNotFoundedException("-----OPCAO NAO ENCONTRADA!-----");
 
                 }
-                break;
+
         }
     }
 

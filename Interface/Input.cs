@@ -1,5 +1,5 @@
 
-namespace Desafio.Inputs.User.Interface;
+namespace Desafio.Interface;
 
 public interface Input
 {
