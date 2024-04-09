@@ -5,5 +5,5 @@ public interface InputNames
 {
     public void CallWelcomeMessage();
     public void Validation();
-    public void UserInputs();
+
 }

@@ -18,8 +18,9 @@ namespace Desafio.Inputs.Math
             Console.WriteLine("\n S para Soma:\n SUB para Subtracao:\n M para Multiplicacao:\n D para Divisao:\n MED para Media \n ");
             string _option = Console.ReadLine();
             var upper = _option.ToUpper();
+            var joinWhiteSpace = upper.Replace(" ", "");
             Loading.LoadingBetweenInstructions();
-            OptionsMenu(upper, calculator);
+            OptionsMenu(joinWhiteSpace, calculator);
         }
         public void OptionsMenu(string option, Calculator calculator)
         {

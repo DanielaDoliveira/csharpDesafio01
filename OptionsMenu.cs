@@ -4,6 +4,7 @@ using Desafio.Inputs.User;
 using Desafio.Inputs.CharCount;
 using Desafio.Inputs.Math;
 using Desafio.Inputs.LicensePlate;
+using InputName.Inputs.DateShow;
 
 
 namespace Desafio;
@@ -18,7 +19,8 @@ public class OptionsMenu
     {
         Console.WriteLine(message);
         input = Console.ReadLine();
-        Options(input);
+        var input_result = input.Replace(" ", "");
+        Options(input_result);
 
     }
     public void Options(string _input)
@@ -31,7 +33,7 @@ public class OptionsMenu
                     Loading.LoadBetweenActivities();
                     Console.WriteLine("\n ... Exercício 1 ... \n");
                     InputUName inputUName = new InputUName();
-                    inputUName.UserInputs();
+                    inputUName.Execute();
                 }
                 break;
             case "2":
@@ -40,7 +42,7 @@ public class OptionsMenu
                     Console.WriteLine("\n ... Exercício 2 ... \n");
                     Loading.LoadBetweenActivities();
                     InputUserNameLastName inputUserNameLastName = new InputUserNameLastName();
-                    inputUserNameLastName.UserInputs();
+                    inputUserNameLastName.Execute();
                 }
                 break;
             case "3":
@@ -66,6 +68,15 @@ public class OptionsMenu
                     Console.WriteLine("\n ... Exercicio 5 ... \n");
                     InputLicensePlate inputLicensePlate = new InputLicensePlate();
                     inputLicensePlate.Execute();
+
+                }
+                break;
+            case "6":
+                {
+                    Loading.LoadBetweenActivities();
+                    Console.WriteLine("\n ... Exercicio 6 ... \n");
+                    InputDateShow inputDateShow = new InputDateShow();
+                    inputDateShow.Execute();
 
                 }
                 break;

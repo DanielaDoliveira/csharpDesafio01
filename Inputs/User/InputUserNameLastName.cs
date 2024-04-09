@@ -37,7 +37,7 @@ public class InputUserNameLastName : InputNames
             Loading.LoadingFinishProgram();
         }
     }
-    public void UserInputs()
+    public void Execute()
     {
         Console.Clear();
         Console.WriteLine("Digite o seu nome abaixo: ");
